@@ -34,3 +34,16 @@ function empty() {
 }
 
 console.log('should reutrn empty', empty(basket));
+
+const maxItems = 5
+
+function isFull(basket) {
+    if (basket < maxItems) {
+        return false;
+    } else {
+        return true;
+    }
+}
+console.log('should return false:', isFull(1));
+
+addItem
