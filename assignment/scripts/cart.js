@@ -20,13 +20,14 @@ console.log('should return true:', addItem('spinach'));
 console.log('should add spinach:', basket);
 
 function listItems() {
-    for (item of basket) {
+    for (let item of basket) {
         console.log(item);
     }
 }
-
-// checks to see if array items print on each line
 console.log(listItems(basket));
+
+// checks to see if array items print on each line -- still printing undefined
+
 
 
 function empty() {
@@ -46,4 +47,3 @@ function isFull(basket) {
 }
 console.log('should return false:', isFull(1));
 
-addItem
