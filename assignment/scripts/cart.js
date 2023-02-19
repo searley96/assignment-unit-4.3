@@ -31,10 +31,11 @@ console.log(listItems(basket));
 
 
 function empty() {
-    return basket.splice();
+    return (basket.length = 0);
 }
 
-console.log('should reutrn empty', empty(basket));
+empty();
+console.log(basket);
 
 const maxItems = 5
 
